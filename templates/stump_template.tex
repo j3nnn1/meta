@@ -1,0 +1,201 @@
+\documentclass[dvips]{article}
+\usepackage{graphicx}
+ 
+\begin{document}
+
+\title{How to write a paper using LaTeX}
+ 
+\author{Dan Stump}
+ 
+%-----------------------------------------------------------------------
+% If your printer does not reproduce dimensions exactly, it may be
+% necessary to remove the % signs and adjust the dimensions in the
+% following commands:
+%
+%     \setlength{\textheight}{24cm}
+%     \setlength{\textwidth}{16cm}
+%
+% Similarly for the following, if you need to adjust the positioning
+% on the paper:
+%
+%     \setlength{\topmargin}{-1cm}
+%     \setlength{\oddsidemargin}{0pt}
+%     \setlength{\evensidemargin}{0pt}
+%------------------------------------------------------------------------
+ 
+\maketitle % this produces the title block
+ 
+\begin{abstract}
+If you use this template and follow the instructions therein,
+your will be able to write a paper using LaTeX.
+\end{abstract}
+ 
+\section{INTRODUCTION}
+
+Here give an introduction to your research.
+
+\section{TEXTS}
+ 
+\subsection{Abstract}
+
+Your contribution should  be preceded by a {\it short} Abstract
+of not more than 150 words,
+written as a single paragraph, as above.
+
+\subsection{Formulae}
+
+Symbols of variables should  be typed in math mode.
+For example, to get the Greek letter alpha,
+type $\backslash{alpha}$; it should come out looking
+like $\alpha$.
+
+Equations should be numbered consecutively, with the 
+number enclosed in parentheses and placed flush with
+the right-hand margin.
+
+Here is an example of an equation, The Schroedinger
+equation for the wave function $\psi(\vec{x},t)$
+\begin{equation}\label{Schroedinger}
+-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi=E\psi.
+\end{equation}
+
+If you want to refer to the equation, you can use
+the {\tt label}, with ($\backslash$ref\{label\}).
+For example, the above equation is (\ref{Schroedinger}).
+
+\subsection{Footnotes}
+
+If unavoidable, footnotes should be placed at the bottom
+of the page in which they are referred to.
+
+\subsection{References}
+
+References should be cited  in the text using numbers within
+square brackets: `example [1],
+example [1, 2], example [1--5]', or alternatively as
+`Ref. [1], Refs. [1] to [5]', and
+`Reference' in full if this word occurs at the
+beginning of a sentence.
+They should {\it appear in consecutive numerical order}
+and should be listed at the end of the text.
+Unless you are near the bottom of the last page of text,
+do {\it not} start a new page for the list of
+references, but continue on the same page.
+Note that in the list of references it is
+unnecessary to state the title of an article or chapter in
+proceedings or in a collection of papers unless a page number
+cannot be quoted, e.g. for future publications.
+
+For example, here's a reference to the paper
+listed in teh bibliography (at the end):
+Ref.\ \cite{Stump}.
+
+\subsubsection{Figures}
+
+All figures should be quoted in consecutive numerical order
+in the text and should, for example, be referred to as
+`Fig. 3, Figs. 3-5', etc., or `Figure' at the beginning of a
+sentence.
+All figures, diagrams, etc., must remain within the same area.
+
+Figure captions should be brief and, if possible,
+go {\it below} the illustration, e.g. `Fig. 3 A short title'.
+They should be typed in point size 9. Very detailed illustrations may
+require a full page; if necessary, they may be placed sideways on the
+page; when this is done, no text may appear on that page, and the
+caption must also read sideways. 
+
+Where possible, figures should be prepared electronically.
+We can handle Encapsulated Postscript.
+
+Here is an example of a figure.
+
+\begin{figure}
+\label{fig:cc}
+\caption{Example of a figure; but it's empty
+until you provide an eps (encapsulated postscript)
+file. (See the source page.)}
+\begin{center}
+%\includegraphics[scale=0.8]{test.eps}
+%%Uncomment the line above and substitute the filename of your eps file.
+\end{center}
+\end{figure}
+
+\subsubsection{Tables}
+
+Tables should be referred to in the text as Table 1, Tables 2--7.
+They should be centred on the page width, with the table
+number, followed by a brief caption in point size 9, typed
+{\it above} them if possible. For the
+positioning of tables, follow the same rules as those for numbered figures.
+
+\subsection{Appendices}
+
+These should be laid out as the sections in the text,
+except that each appendix should start on a new page.
+They should be numbered consecutively and be referred
+to as Appendix 1, Appendices 1--3, etc. 
+Equations, figures and tables should be
+quoted as Eq. (A.1.1) and Fig. A.1.1, etc.  
+
+\subsection*{Acknowledgements}
+
+If required, acknowledgements  should appear as a section
+immediately before the reference section.
+The acknowledgements section should not be numbered.
+
+%\newpage
+
+\section*{APPENDIX 1 -- PREPARING A CONTRIBUTION IN LATEX}
+
+We can accept contributions prepared using Latex.
+
+\section*{TEXTS}
+
+The standard Latex commands \verb|\section, \subsection and \subsubsection|~
+should be used for headings.
+In the text, leave a blank line after each paragraph.
+References to other documents should be
+made using the \verb|\cite|~command.
+The command \verb|\ref|~should be used to refer to 
+equations, figures and tables within your contribution
+which should be labelled using the \verb|\label|~command within the 
+equation, figure or table environment.
+
+\section*{FORMULAE}
+
+The default Tex format is acceptable for most formulae.
+For numbered equations, the construction \\
+\verb|\begin{equation}|\\ 
+\verb|...|\\
+\verb|\label{name}|\\
+\verb|\end{equation}|\\
+should be used.
+
+\section*{FIGURES}
+
+Figures may be prepared electronically using a variety of
+computer applications, as Encapsulated Postscript files.
+Make sure that the image, when printed, is of high quality.
+To include figures in Latex, a contruction of the form\\
+\verb|\begin{figure}[htbp]|\\
+\verb|\includegraphics[width=xcm]{file_name.eps}|\\
+\verb|\caption{}|\\
+\verb|\label{name}|\\
+\verb|\end{figure}|\\
+should be used.
+Figures may be centred
+using the \verb|\begin{center}... \end{center}| construct
+within the figure environment.
+
+\section*{REFERENCES}
+
+\begin{thebibliography}{99}
+
+\bibitem{Stump}{D. R. Stump, ``How to write a LaTeX paper'',2000.}
+
+\end{thebibliography}
+
+\end{document}
+
+

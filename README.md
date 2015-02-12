@@ -18,5 +18,6 @@
 	clusteringPSO2014.6428.pdf 
 
 #### Datasets to review
-	
+	http://freegisdata.rtwilson.com/
+	http://www.acleddata.com/data/
 
