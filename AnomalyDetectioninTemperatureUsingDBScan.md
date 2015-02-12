@@ -1,3 +1,4 @@
+# ok_deteccionAnomaliaTempDbscanCelik2010.pdf
 # Resumen de  Mete Celik, Filiz DADASER-Celik, ahmet sakir dokuz
 **DBScan** es un algoritmo de cluster basado en densidad.
 Descubrimiento de patrones en series de tiempo, *deteccion de anomalias en series de tiempo*
