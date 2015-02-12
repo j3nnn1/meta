@@ -1,0 +1,30 @@
+# 1205.1117.pdf
+# Overview on Clustering methods
+# T. Soni Madhulatha
+
+* tecnica comun para analisis estadistico de datos. mas popular en aprendizaje no supervisado.
+* se usa en: machine learning, datamining, pattern recognition, analisis de images y bioinformatica.
+## Tipos de Clustering ##
+
+1- particionado, kmeans, kmedoids, dbscan.
+2- jerarquico. Algoritmos jerarquicos encuentran clusters consecutivos. los algoritmos jerarquicos pueden ser aglomerativo o divisivos.
+    2.1 - aglomerativos comienzan el algoritmo donde cada individuo es un cluster separado, y se mezclan para formar clusters mas grandes.
+    2.2 - divisivos, comienzan el algoritmo con un cluster muy general y luego divide sucesivamente en clusters mas pequeños.
+    2.3 - enlace completo, enlace simple, enlace promedio.
+
+# Description ##
+* agrupa individuos comunes en diferentes grupos.
+* beneficios
+* aplicaciones
+
+# Dbscan 
+
+* no maneja bien clusters de diferentes tamaños de epsilon. o diferentes densidades.
+* puede ser paralelizado.
+
+
+#medir el numero de clusters
+    The Akaike information criterion (AIC), The Bayesian
+    information criterion (BIC), The Deviance information
+    criterion (DIC).
+
